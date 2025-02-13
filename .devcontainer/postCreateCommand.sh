@@ -10,5 +10,5 @@ brew install helmfile
 helm plugin install https://github.com/databus23/helm-diff
 
 # Start minikube
-minikube start --container-runtime containerd --nodes 4
+minikube start --container-runtime containerd --nodes 1 --embed-certs --ports 8443:8443
 minikube addons enable ingress
